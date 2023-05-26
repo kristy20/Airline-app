@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="607.0" style="-fx-background-color: #CACFD2;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.reg.controllers.CustomerPageController">
+    <children>
+        <Label layoutX="44.0" layoutY="14.0" prefHeight="50.0" prefWidth="450.0" text="Welcome to Airline Application, dear customer!">
+            <font>
+                <Font name="Centaur" size="24.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="200.0" fitWidth="140.0" layoutX="472.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@logo1.png" />
+            </image>
+        </ImageView>
+        <Button fx:id="logoutButton" layoutX="487.0" layoutY="372.0" mnemonicParsing="false" onAction="#handleLogout" prefHeight="57.0" prefWidth="109.0" text="Logout" textFill="#400f0f">
+            <font>
+                <Font name="Centaur" size="27.0" />
+            </font>
+        </Button>
+        <Button fx:id="enrollButton" layoutX="31.0" layoutY="88.0" mnemonicParsing="false" onAction="#handleEnroll" prefHeight="50.0" prefWidth="212.0" text="Enroll to flight!">
+         <font>
+            <Font name="Centaur" size="27.0" />
+         </font></Button>
+        <Button fx:id="enrolledListButton" layoutX="13.0" layoutY="168.0" mnemonicParsing="false" onAction="#handleEnrolledFlights" prefHeight="52.0" prefWidth="247.0" text="List enrolled flights!">
+         <font>
+            <Font name="Centaur" size="27.0" />
+         </font>
+      </Button>
+        <Button fx:id="flightListButton" layoutX="27.0" layoutY="249.0" mnemonicParsing="false" onAction="#handleShowFlights" prefHeight="52.0" prefWidth="220.0" text="View all flights!">
+         <font>
+            <Font name="Centaur" size="27.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

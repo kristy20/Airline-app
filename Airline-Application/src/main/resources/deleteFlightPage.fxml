@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: #CACFD2;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.reg.controllers.DeleteFlightController">
+    <children>
+        <TableView fx:id="flightsTableView" layoutY="147.0" prefHeight="306.0" prefWidth="700.0" style="-fx-background-color: yellow;" />
+        <Button fx:id="backButton" layoutX="582.0" layoutY="493.0" mnemonicParsing="false" onAction="#handleBack" prefHeight="49.0" prefWidth="86.0" text="Back">
+            <font>
+                <Font name="Times New Roman" size="21.0" />
+            </font></Button>
+        <Button fx:id="deleteButton" layoutX="42.0" layoutY="484.0" mnemonicParsing="false" onAction="#handleDelete" prefHeight="66.0" prefWidth="109.0" text="Delete">
+            <font>
+                <Font name="Times New Roman" size="23.0" />
+            </font></Button>
+        <ImageView fitHeight="143.0" fitWidth="194.0" pickOnBounds="true" preserveRatio="true">
+        </ImageView>
+        <ImageView fitHeight="143.0" fitWidth="150.0" layoutX="550.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@logo1.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

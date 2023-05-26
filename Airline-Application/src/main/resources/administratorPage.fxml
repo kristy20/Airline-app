@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="445.0" prefWidth="610.0" style="-fx-background-color: #CACFD2;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.reg.controllers.AdministratorPageController">
+    <children>
+        <Label layoutX="44.0" layoutY="14.0" prefHeight="50.0" prefWidth="450.0" text="Welcome Administrator!">
+            <font>
+                <Font name="Centaur" size="24.0" />
+            </font>
+        </Label>
+        <Button fx:id="logoutButton" layoutX="257.0" layoutY="380.0" mnemonicParsing="false" onAction="#handleLogout" prefHeight="50.0" prefWidth="110.0" text="Logout">
+            <font>
+                <Font name="Times New Roman" size="21.0" />
+            </font></Button>
+        <ImageView fitHeight="180.0" fitWidth="140.0" layoutX="500.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@logo1.png" />
+            </image>
+        </ImageView>
+        <Text layoutX="13.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please select your desired action from the above list " wrappingWidth="472.4079055786133">
+            <font>
+                <Font name="Times New Roman Italic" size="22.0" />
+            </font>
+        </Text>
+        <Button fx:id="flightListButton" layoutX="14.0" layoutY="99.0" mnemonicParsing="false" onAction="#handleShowFlights" prefHeight="50.0" prefWidth="191.0" text="Show all the flights">
+            <font>
+                <Font name="Times New Roman" size="20.0" />
+            </font>
+        </Button>
+        <Button fx:id="addButton" layoutX="250.0" layoutY="99.0" mnemonicParsing="false" onAction="#handleAddFlight" prefHeight="50.0" prefWidth="191.0" text="Add a flight">
+            <font>
+                <Font name="Times New Roman" size="20.0" />
+            </font>
+        </Button>
+        <Button fx:id="editButton" layoutX="14.0" layoutY="213.0" mnemonicParsing="false" onAction="#handleEdit" prefHeight="50.0" prefWidth="191.0" text="Edit a flight">
+            <font>
+                <Font name="Times New Roman" size="20.0" />
+            </font>
+        </Button>
+        <Button fx:id="cancelButton" layoutX="250.0" layoutY="213.0" mnemonicParsing="false" onAction="#handleDeleteFlight" prefHeight="50.0" prefWidth="191.0" text="Cancel a flight">
+            <font>
+                <Font name="Times New Roman" size="20.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>
